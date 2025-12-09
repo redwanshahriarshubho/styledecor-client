@@ -159,3 +159,46 @@ const MyBookings = () => {
                               className="btn btn-error btn-outline btn-sm gap-2"
                             >
                               <Trash2 size={16} />
+                              Cancel
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Pagination */}
+            {pagination.totalPages > 1 && (
+              <div className="flex justify-center mt-8">
+                <div className="join">
+                  <button
+                    onClick={() => setPage(page - 1)}
+                    disabled={page === 1}
+                    className="join-item btn"
+                  >
+                    Previous
+                  </button>
+                  <button className="join-item btn btn-disabled">
+                    Page {page} of {pagination.totalPages}
+                  </button>
+                  <button
+                    onClick={() => setPage(page + 1)}
+                    disabled={page === pagination.totalPages}
+                    className="join-item btn"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default MyBookings;
