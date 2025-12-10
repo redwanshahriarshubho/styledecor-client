@@ -93,6 +93,26 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          <div className="text-center mt-16 pt-8 border-t">
+            <p className="text-gray-600 mb-2">Project Developed By</p>
+            <h3 className="text-2xl font-bold text-primary">Redwan Shahriar</h3>
+            <p className="text-gray-600 mt-2">Full Stack Web Developer</p>
+            <div className="flex justify-center gap-4 mt-4">
+              <a href="https://github.com/redwanshahriar" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/redwan-shahriar-shubho-799532240/" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
+                LinkedIn
+              </a>
+              <a href="https://x.com/Shubho_17" target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">
+                Twitter
+              </a>
+              <a href="mailto:redwanshahriarshubho.1789@gmail.com" className="btn btn-outline btn-sm">
+                Email
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

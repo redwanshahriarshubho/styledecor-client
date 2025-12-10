@@ -59,7 +59,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="tel"
-                    placeholder="+880 1234-567890"
+                    placeholder="+880 1401445752"
                     className="input input-bordered"
                     required
                   />
@@ -104,7 +104,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-gray-600">+880 1234-567890</p>
+                      <p className="text-gray-600">+880 1401445752</p>
                       <p className="text-gray-600">+880 9876-543210</p>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <p className="text-gray-600">info@styledecor.com</p>
-                      <p className="text-gray-600">support@styledecor.com</p>
+                      <p className="text-gray-600">redwanshahriarshubho.1789@gmail.com</p>
                     </div>
                   </div>
 
@@ -138,7 +138,7 @@ const Contact = () => {
                 <p className="mb-4 opacity-90">
                   Our customer support team is available during business hours to assist you with any questions.
                 </p>
-                <a href="tel:+8801234567890" className="btn btn-white">
+                <a href="tel:+8801401445752" className="btn btn-white">
                   Call Now
                 </a>
               </div>

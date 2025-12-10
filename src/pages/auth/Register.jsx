@@ -21,7 +21,7 @@ const Register = () => {
     try {
       setUploading(true);
       const response = await axios.post(
-        `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMAGEBB_API_KEY}`,
+        `https://api.imgbb.com/1/upload?key=3e6af7ba1de829847447af4b6898aca9`,
         formData
       );
       return response.data.data.url;
@@ -36,6 +36,10 @@ const Register = () => {
   const handleImageChange = async (e) => {
     const file = e.target.files[0];
     if (file) {
+      if (file.size > 5000000) { // 5MB limit
+        toast.error('Image size should be less than 5MB');
+        return;
+      }
       const imageUrl = await uploadImage(file);
       if (imageUrl) {
         setPhotoURL(imageUrl);
@@ -142,23 +146,24 @@ const Register = () => {
               {/* Photo Upload */}
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-semibold">Profile Photo</span>
+                  <span className="label-text font-semibold">Profile Photo (Optional)</span>
                 </label>
-                <div className="relative">
-                  <Image className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handleImageChange}
-                    className="file-input file-input-bordered w-full pl-10"
-                  />
-                </div>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageChange}
+                  className="file-input file-input-bordered w-full"
+                  disabled={uploading}
+                />
                 {uploading && (
-                  <span className="text-sm text-gray-500 mt-1">Uploading...</span>
+                  <div className="flex items-center gap-2 mt-2">
+                    <Loader className="animate-spin text-primary" size={16} />
+                    <span className="text-sm text-gray-500">Uploading...</span>
+                  </div>
                 )}
                 {photoURL && (
                   <div className="mt-2">
-                    <img src={photoURL} alt="Preview" className="w-20 h-20 rounded-full object-cover" />
+                    <img src={photoURL} alt="Preview" className="w-20 h-20 rounded-full object-cover border-2 border-primary" />
                   </div>
                 )}
               </div>

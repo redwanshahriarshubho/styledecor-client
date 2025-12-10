@@ -22,13 +22,13 @@ const Footer = () => {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm bg-gray-800 hover:bg-primary border-none">
                 <Facebook size={16} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm bg-gray-800 hover:bg-primary border-none">
+              <a href="https://x.com/Shubho_17" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm bg-gray-800 hover:bg-primary border-none">
                 <Twitter size={16} />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm bg-gray-800 hover:bg-primary border-none">
                 <Instagram size={16} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm bg-gray-800 hover:bg-primary border-none">
+              <a href="https://www.linkedin.com/in/redwan-shahriar-shubho-799532240/" target="_blank" rel="noopener noreferrer" className="btn btn-circle btn-sm bg-gray-800 hover:bg-primary border-none">
                 <Linkedin size={16} />
               </a>
             </div>
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={18} className="text-primary" />
-                <span>+880 1234-567890</span>
+                <span>+880 1401445752</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={18} className="text-primary" />
@@ -95,7 +95,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} StyleDecor. All rights reserved. | Designed with ❤️ for beautiful spaces</p>
+          <p>&copy; {new Date().getFullYear()} StyleDecor. All rights reserved.</p>
+          <p className="mt-1">Developed with ❤️ by <span className="font-semibold text-primary">Redwan Shahriar</span></p>
         </div>
       </div>
     </footer>
