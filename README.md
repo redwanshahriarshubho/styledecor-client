@@ -1,16 +1,89 @@
-# React + Vite
+# 🎨 StyleDecor - Home & Ceremony Decoration Booking System (Client)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Name
+**StyleDecor Client** - A modern React-based web application for booking decoration services
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
+```
+styledecor-client/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   │   └── DashboardLayout.jsx
+│   │   ├── home/
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── ServiceCard.jsx
+│   │   │   ├── ServicesSection.jsx
+│   │   │   ├── TopDecoratorsSection.jsx
+│   │   │   └── CoverageMapSection.jsx
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── MainLayout.jsx
+│   │   ├── ui/
+│   │   │   └── Loading.jsx
+│   │   └── PrivateRoute.jsx
+│   ├── contexts/
+│   │   └── AuthContext.jsx
+│   ├── firebase/
+│   │   └── firebase.config.js
+│   ├── pages/
+│   │   ├── admin/
+│   │   │   ├── ManageServices.jsx
+│   │   │   ├── ManageBookings.jsx
+│   │   │   ├── ManageUsers.jsx
+│   │   │   ├── Revenue.jsx
+│   │   │   └── Analytics.jsx
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   └── Register.jsx
+│   │   ├── decorator/
+│   │   │   └── AssignedProjects.jsx
+│   │   ├── user/
+│   │   │   ├── MyBookings.jsx
+│   │   │   ├── Payment.jsx
+│   │   │   └── PaymentHistory.jsx
+│   │   ├── Home.jsx
+│   │   ├── Services.jsx
+│   │   ├── ServiceDetails.jsx
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── CoverageMap.jsx
+│   │   └── ErrorPage.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env.local
+├── .gitignore
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🤝 Contributing
+This is a learning project created as part of a programming assessment.
 
-## Expanding the ESLint configuration
+## 👨‍💻 Developer
+**Redwan Shahriar**  
+Full Stack Web Developer  
+Email: redwanshahriar@example.com  
+GitHub: [@redwanshahriarshubho](https://github.com/redwanshahriarshubho)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📄 License
+This project was created as part of a programming assessment.
+
+## 🙏 Acknowledgments
+- Firebase for authentication
+- Stripe for payment processing
+- Unsplash for images
+- DaisyUI for UI components
+- OpenStreetMap for mapping data
+
+---
+
+**Developed with ❤️ by Redwan Shahriar**
