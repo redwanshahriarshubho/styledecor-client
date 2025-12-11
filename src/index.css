@@ -39,7 +39,8 @@ body {
   background: #e11d48;
 }
 
-a, button {
+a,
+button {
   transition: all 0.3s ease;
 }
 
@@ -57,4 +58,8 @@ select:focus {
 img {
   max-width: 100%;
   height: auto;
+}
+
+button {
+  user-select: none;
 }
