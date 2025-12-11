@@ -100,17 +100,4 @@ export default {
     ],
   },
 }
-```
 
----
-
-## **📁 FILE LOCATIONS**
-```
-styledecor-client/
-├── src/
-│   ├── index.css          ← FILE 1 (Place here)
-│   └── App.css            ← FILE 2 (Optional, can delete)
-├── tailwind.config.js     ← FILE 3 (Place here)
-├── .env.local
-├── package.json
-└── index.html
