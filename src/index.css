@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 body {
   margin: 0;
@@ -17,13 +17,11 @@ body {
   box-sizing: border-box;
 }
 
-/* Leaflet Map Styles */
 .leaflet-container {
   width: 100%;
   height: 100%;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -41,7 +39,6 @@ body {
   background: #e11d48;
 }
 
-/* Loading Animation */
 .loading-spinner {
   animation: spin 1s linear infinite;
 }
@@ -55,12 +52,10 @@ body {
   }
 }
 
-/* Smooth Transitions */
 a, button {
   transition: all 0.3s ease;
 }
 
-/* Card Hover Effect */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -69,7 +64,6 @@ a, button {
   transform: translateY(-5px);
 }
 
-/* Input Focus Styles */
 input:focus,
 textarea:focus,
 select:focus {
@@ -78,14 +72,12 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.1);
 }
 
-/* Badge Styles */
 .badge {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* Custom Button Styles */
 .btn {
   transition: all 0.3s ease;
 }
@@ -95,29 +87,24 @@ select:focus {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Images */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Disable text selection on buttons */
 button {
   user-select: none;
 }
 
-/* Modal Backdrop */
 .modal-backdrop {
   backdrop-filter: blur(4px);
 }
 
-/* Toast Notification Custom Styles */
 .toast-notification {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Skeleton Loading */
 .skeleton {
   animation: skeleton-loading 1s linear infinite alternate;
 }
@@ -131,7 +118,6 @@ button {
   }
 }
 
-/* Print Styles */
 @media print {
   .no-print {
     display: none !important;
