@@ -1,4 +1,3 @@
-/* This file is optional and can be deleted if not needed */
-/* All styles are handled by Tailwind CSS and index.css */
-
-/* You can add custom component styles here if needed */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
