@@ -103,9 +103,16 @@ export const AuthProvider = ({ children }) => {
       setUser(response.data.data);
     } catch (error) {
       console.error('Error fetching user data:', error);
+      // If token is invalid, clear it
+      if (error.response?.status === 401) {
+        localStorage.removeItem('token');
+        setToken(null);
+        setUser(null);
+      }
     }
   };
 
+  // ✅ FIXED: Removed token from dependency array to prevent infinite loop
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser && token) {
@@ -117,7 +124,7 @@ export const AuthProvider = ({ children }) => {
     });
 
     return () => unsubscribe();
-  }, [token]);
+  }, []); // ✅ Changed from [token] to []
 
   const value = {
     user,
