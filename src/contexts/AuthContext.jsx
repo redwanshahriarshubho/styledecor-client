@@ -12,20 +12,17 @@ import { auth } from '../firebase/firebase.config';
 import axios from 'axios';
 
 const AuthContext = createContext();
-
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [token, setToken] = useState(localStorage.getItem('token'));
-
   const API_URL = import.meta.env.VITE_API_URL;
 
   const login = async (email, password) => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const response = await axios.post(`${API_URL}/api/auth/login`, { email, password });
-    
     localStorage.setItem('token', response.data.token);
     setToken(response.data.token);
     setUser(response.data.user);
