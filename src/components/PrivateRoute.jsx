@@ -10,9 +10,7 @@ const PrivateRoute = ({ children, allowedRoles }) => {
 
   if (!user) return <Navigate to="/login" state={{ from: location }} replace />;
 
-  if (allowedRoles && !allowedRoles.includes(user.role)) {
-    return <Navigate to="/dashboard" replace />;
-  }
+  if (allowedRoles && !allowedRoles.includes(user.role)) return <Navigate to="/dashboard" replace />;
 
   return children;
 };
